@@ -10,4 +10,8 @@
     body {
         @apply font-baseFont
     }
+
+    section {
+        @apply pt-16 pb-4 md:pt-[120px] lg:pt-[80px];
+    }
 }
