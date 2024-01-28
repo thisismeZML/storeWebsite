@@ -16,7 +16,7 @@
   </head>
   <body>
     <header
-      class="container py-5 px-0 border-b flex flex-col gap-2 md:py-3 fixed top-0 left-0 right-0 w-full bg-white"
+      class="container py-5 px-0 border-b flex flex-col gap-2 md:py-3 fixed top-0 left-0 right-0 w-full bg-white z-50"
     >
       <div class="flex justify-between items-center py-5">
         <!-- left -->
@@ -159,7 +159,7 @@
               alt=""
             />
           </li>
-          <li><a href="">Dash Board</a></li>
+          <li><a href="">Dashboard</a></li>
           <li><a href="">Docs</a></li>
           <li class="absolute top-12 right-6 lg:hidden">
             <a href="#"
@@ -214,12 +214,12 @@
 
               <a href=""
                 ><i
-                  class="fa-solid fa-chevron-left rounded-full px-3.5 py-2.5 bg-[#ecf0ef] hover:bg-PrimaryColor duration-300 hover:text-white"
+                  class="fa-solid fa-chevron-left rounded-full px-3.5 py-2.5 bg-[#ecf0ef] hover:bg-PrimaryColor duration-300 hover:text-white cursor-pointer"
                 ></i
               ></a>
               <a href=""
                 ><i
-                  class="fa-solid fa-chevron-right rounded-full px-3.5 py-2.5 bg-[#ecf0ef] hover:bg-PrimaryColor duration-300 hover:text-white"
+                  class="fa-solid fa-chevron-right rounded-full px-3.5 py-2.5 bg-[#ecf0ef] hover:bg-PrimaryColor duration-300 hover:text-white cursor-pointer"
                 ></i
               ></a>
             </div>
@@ -314,6 +314,268 @@
             </div>
           </div>
         </div>
+      </section>
+
+      <!-- Product Section -->
+      <section id="Product">
+        <div class="container flex flex-col gap-7">
+          <h3 class="sub-head">Popular Product</h3>
+          <!-- product container -->
+          <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-5">
+            <!-- 1 -->
+            <div class="popular-product border p-5 rounded-lg hover:border-PrimaryColor cursor-pointer hover:shadow-lg duration-200 relative" id="product1">
+              <img src="./images/product-img-1.jpg" class="w-[120px] m-auto" alt="">
+              <p class="text-xs text-[#7b888f]">Snack & Munchies</p>
+              <h4 class="text-sm font-semibold">Haldiram's Sev Bhuja</h4>
+              <div class="rating mt-2">
+                <small class="star">
+                  <i class="fa-solid fa-star text-yellow-400"></i>
+                  <i class="fa-solid fa-star text-yellow-400"></i>
+                  <i class="fa-solid fa-star text-yellow-400"></i>
+                  <i class="fa-solid fa-star text-yellow-400"></i>
+                  <i class="fa-regular fa-star-half-stroke text-yellow-400"></i>
+                </small>
+                <span class="text-sm">4.5(149)</span>
+              </div>
+              <div class="priceTag flex justify-between mt-3">
+                <div class="text-sm">$18 <del>$24</del></div>
+                <button class="bg-PrimaryColor px-2 py-0.5 text-white rounded-md text-sm">+ Add</button>
+              </div>
+              <!-- absolute btn -->
+              <div class="gap-3 absolute top-[36%] left-[17%] hidden " id="showBtns1">
+                <i class="fa-regular fa-eye bg-white shadow-xl  p-3 rounded-lg"></i>
+                <i class="fa-regular fa-heart bg-white shadow-xl p-3 rounded-lg"></i>
+                <i class="fa-solid fa-arrow-right-arrow-left bg-white shadow-xl p-3 rounded-lg"></i>
+              </div>
+            </div>
+            <!-- 2 -->
+            <div class="popular-product border p-5 rounded-lg hover:border-PrimaryColor cursor-pointer hover:shadow-lg duration-200 relative" id="product2">
+              <img src="./images/product-img-2.jpg" class="w-[120px] m-auto" alt="">
+              <p class="text-xs text-[#7b888f]">Bakery & Biscuits</p>
+              <h4 class="text-sm font-semibold">NutriChoice Digestive</h4>
+              <div class="rating mt-2">
+                <small class="star">
+                  <i class="fa-solid fa-star text-yellow-400"></i>
+                  <i class="fa-solid fa-star text-yellow-400"></i>
+                  <i class="fa-solid fa-star text-yellow-400"></i>
+                  <i class="fa-solid fa-star text-yellow-400"></i>
+                  <i class="fa-regular fa-star-half-stroke text-yellow-400"></i>
+                </small>
+                <span class="text-sm">4.5(25)</span>
+              </div>
+              <div class="priceTag flex justify-between mt-3">
+                <div class="text-sm">$24</div>
+                <button class="bg-PrimaryColor px-2 py-0.5 text-white rounded-md text-sm">+ Add</button>
+              </div>
+              <div class="gap-3 absolute top-[36%] left-[17%] hidden" id="showBtns2">
+                <i class="fa-regular fa-eye bg-white shadow-xl  p-3 rounded-lg"></i>
+                <i class="fa-regular fa-heart bg-white shadow-xl p-3 rounded-lg"></i>
+                <i class="fa-solid fa-arrow-right-arrow-left bg-white shadow-xl p-3 rounded-lg"></i>
+              </div>
+            </div>
+            <!-- 3 -->
+            <div class="popular-product border p-5 rounded-lg hover:border-PrimaryColor cursor-pointer hover:shadow-lg duration-200 relative" id="product3">
+              <img src="./images/product-img-3.jpg" class="w-[120px] m-auto" alt="">
+              <p class="text-xs text-[#7b888f]">Bakery & Biscuits</p>
+              <h4 class="text-sm font-semibold">Cadbury 5 Star Chocolate</h4>
+              <div class="rating mt-2">
+                <small class="star">
+                  <i class="fa-solid fa-star text-yellow-400"></i>
+                  <i class="fa-solid fa-star text-yellow-400"></i>
+                  <i class="fa-solid fa-star text-yellow-400"></i>
+                  <i class="fa-solid fa-star text-yellow-400"></i>
+                  <i class="fa-solid fa-star text-yellow-400"></i>
+                </small>
+                <span class="text-sm">5 (469)</span>
+              </div>
+              <div class="priceTag flex justify-between mt-3">
+                <div class="text-sm">$32 <del>$35</del></div>
+                <button class="bg-PrimaryColor px-2 py-0.5 text-white rounded-md text-sm">+ Add</button>
+              </div>
+              <div class="gap-3 absolute top-[36%] left-[17%] hidden" id="showBtns3">
+                <i class="fa-regular fa-eye bg-white shadow-xl  p-3 rounded-lg"></i>
+                <i class="fa-regular fa-heart bg-white shadow-xl p-3 rounded-lg"></i>
+                <i class="fa-solid fa-arrow-right-arrow-left bg-white shadow-xl p-3 rounded-lg"></i>
+              </div>
+            </div>
+            <!-- 4 -->
+            <div class="popular-product border p-5 rounded-lg hover:border-PrimaryColor cursor-pointer hover:shadow-lg duration-200 relative" id="product4">
+              <img src="./images/product-img-4.jpg" class="w-[120px] m-auto" alt="">
+              <p class="text-xs text-[#7b888f]">Snack & Munchies</p>
+              <h4 class="text-sm font-semibold">Onion Flavour Potato</h4>
+              <div class="rating mt-2">
+                <small class="star">
+                  <i class="fa-solid fa-star text-yellow-400"></i>
+                  <i class="fa-solid fa-star text-yellow-400"></i>
+                  <i class="fa-solid fa-star text-yellow-400"></i>
+                  <i class="fa-regular fa-star-half-stroke text-yellow-400"></i>
+                  <i class="fa-regular fa-star"></i>
+                </small>
+                <span class="text-sm">3.5 (456)</span>
+              </div>
+              <div class="priceTag flex justify-between mt-3">
+                <div class="text-sm">$3 <del>$5</del></div>
+                <button class="bg-PrimaryColor px-2 py-0.5 text-white rounded-md text-sm">+ Add</button>
+              </div>
+              <div class="gap-3 absolute top-[36%] left-[17%] hidden" id="showBtns4">
+                <i class="fa-regular fa-eye bg-white shadow-xl  p-3 rounded-lg"></i>
+                <i class="fa-regular fa-heart bg-white shadow-xl p-3 rounded-lg"></i>
+                <i class="fa-solid fa-arrow-right-arrow-left bg-white shadow-xl p-3 rounded-lg"></i>
+              </div>
+            </div>
+            <!-- 5 -->
+            <div class="popular-product border p-5 rounded-lg hover:border-PrimaryColor cursor-pointer hover:shadow-lg duration-200 relative" id="product5">
+              <img src="./images/product-img-5.jpg" class="w-[120px] m-auto" alt="">
+              <p class="text-xs text-[#7b888f]">Instant Food</p>
+              <h4 class="text-sm font-semibold">Salted Instant Popcorn</h4>
+              <div class="rating mt-2">
+                <small class="star">
+                  <i class="fa-solid fa-star text-yellow-400"></i>
+                  <i class="fa-solid fa-star text-yellow-400"></i>
+                  <i class="fa-solid fa-star text-yellow-400"></i>
+                  <i class="fa-solid fa-star text-yellow-400"></i>
+                  <i class="fa-regular fa-star-half-stroke text-yellow-400"></i>
+                </small>
+                <span class="text-sm">4.5(39)</span>
+              </div>
+              <div class="priceTag flex justify-between mt-3">
+                <div class="text-sm">$13 <del>$18</del></div>
+                <button class="bg-PrimaryColor px-2 py-0.5 text-white rounded-md text-sm">+ Add</button>
+              </div>
+              <div class="gap-3 absolute top-[36%] left-[17%] hidden" id="showBtns5">
+                <i class="fa-regular fa-eye bg-white shadow-xl  p-3 rounded-lg"></i>
+                <i class="fa-regular fa-heart bg-white shadow-xl p-3 rounded-lg"></i>
+                <i class="fa-solid fa-arrow-right-arrow-left bg-white shadow-xl p-3 rounded-lg"></i>
+              </div>
+            </div>
+            <!-- 6 -->
+            <div class="popular-product border p-5 rounded-lg hover:border-PrimaryColor cursor-pointer hover:shadow-lg duration-200 relative" id="product6">
+              <img src="./images/product-img-6.jpg" class="w-[120px] m-auto" alt="">
+              <p class="text-xs text-[#7b888f]">Dairy, Bread & Eggs</p>
+              <h4 class="text-sm font-semibold">Blueberry Greek Yogurt</h4>
+              <div class="rating mt-2">
+                <small class="star">
+                  <i class="fa-solid fa-star text-yellow-400"></i>
+                  <i class="fa-solid fa-star text-yellow-400"></i>
+                  <i class="fa-solid fa-star text-yellow-400"></i>
+                  <i class="fa-solid fa-star text-yellow-400"></i>
+                  <i class="fa-regular fa-star-half-stroke text-yellow-400"></i>
+                </small>
+                <span class="text-sm">4.5(189)</span>
+              </div>
+              <div class="priceTag flex justify-between mt-3">
+                <div class="text-sm">$18 <del>$24</del></div>
+                <button class="bg-PrimaryColor px-2 py-0.5 text-white rounded-md text-sm">+ Add</button>
+              </div>
+              <div class="gap-3 absolute top-[36%] left-[17%] hidden" id="showBtns6">
+                <i class="fa-regular fa-eye bg-white shadow-xl  p-3 rounded-lg"></i>
+                <i class="fa-regular fa-heart bg-white shadow-xl p-3 rounded-lg"></i>
+                <i class="fa-solid fa-arrow-right-arrow-left bg-white shadow-xl p-3 rounded-lg"></i>
+              </div>
+            </div>
+            <!-- 7 -->
+            <div class="popular-product border p-5 rounded-lg hover:border-PrimaryColor cursor-pointer hover:shadow-lg duration-200 relative" id="product7">
+              <img src="./images/product-img-7.jpg" class="w-[120px] m-auto" alt="">
+              <p class="text-xs text-[#7b888f]">Dairy, Bread & Eggs</p>
+              <h4 class="text-sm font-semibold">Britannia Cheese Slices</h4>
+              <div class="rating mt-2">
+                <small class="star">
+                  <i class="fa-solid fa-star text-yellow-400"></i>
+                  <i class="fa-solid fa-star text-yellow-400"></i>
+                  <i class="fa-solid fa-star text-yellow-400"></i>
+                  <i class="fa-solid fa-star text-yellow-400"></i>
+                  <i class="fa-solid fa-star text-yellow-400"></i>
+                </small>
+                <span class="text-sm">5(345)</span>
+              </div>
+              <div class="priceTag flex justify-between mt-3">
+                <div class="text-sm">$24</div>
+                <button class="bg-PrimaryColor px-2 py-0.5 text-white rounded-md text-sm">+ Add</button>
+              </div>
+              <div class="gap-3 absolute top-[36%] left-[17%] hidden" id="showBtns7">
+                <i class="fa-regular fa-eye bg-white shadow-xl  p-3 rounded-lg"></i>
+                <i class="fa-regular fa-heart bg-white shadow-xl p-3 rounded-lg"></i>
+                <i class="fa-solid fa-arrow-right-arrow-left bg-white shadow-xl p-3 rounded-lg"></i>
+              </div>
+            </div>
+            <!-- 8 -->
+            <div class="popular-product border p-5 rounded-lg hover:border-PrimaryColor cursor-pointer hover:shadow-lg duration-200 relative" id="product8">
+              <img src="./images/product-img-8.jpg" class="w-[120px] m-auto" alt="">
+              <p class="text-xs text-[#7b888f]">Instant Food</p>
+              <h4 class="text-sm font-semibold">Kellogg's Original Cereals</h4>
+              <div class="rating mt-2">
+                <small class="star">
+                  <i class="fa-solid fa-star text-yellow-400"></i>
+                  <i class="fa-solid fa-star text-yellow-400"></i>
+                  <i class="fa-solid fa-star text-yellow-400"></i>
+                  <i class="fa-solid fa-star text-yellow-400"></i>
+                  <i class="fa-regular fa-star-half-stroke text-yellow-400"></i>
+                </small>
+                <span class="text-sm">4.5(90)</span>
+              </div>
+              <div class="priceTag flex justify-between mt-3">
+                <div class="text-sm">$32 <del>$35</del></div>
+                <button class="bg-PrimaryColor px-2 py-0.5 text-white rounded-md text-sm">+ Add</button>
+              </div>
+              <div class="gap-3 absolute top-[36%] left-[17%] hidden" id="showBtns8">
+                <i class="fa-regular fa-eye bg-white shadow-xl  p-3 rounded-lg"></i>
+                <i class="fa-regular fa-heart bg-white shadow-xl p-3 rounded-lg"></i>
+                <i class="fa-solid fa-arrow-right-arrow-left bg-white shadow-xl p-3 rounded-lg"></i>
+              </div>
+            </div>
+            <!-- 9 -->
+            <div class="popular-product border p-5 rounded-lg hover:border-PrimaryColor cursor-pointer hover:shadow-lg duration-200 relative" id="product9">
+              <img src="./images/product-img-9.jpg" class="w-[120px] m-auto" alt="">
+              <p class="text-xs text-[#7b888f]">Snack & Munchies</p>
+              <h4 class="text-sm font-semibold">Slurrp Millet Chocolate</h4>
+              <div class="rating mt-2">
+                <small class="star">
+                  <i class="fa-solid fa-star text-yellow-400"></i>
+                  <i class="fa-solid fa-star text-yellow-400"></i>
+                  <i class="fa-solid fa-star text-yellow-400"></i>
+                  <i class="fa-solid fa-star text-yellow-400"></i>
+                  <i class="fa-regular fa-star-half-stroke text-yellow-400"></i>
+                </small>
+                <span class="text-sm">4.5(67)</span>
+              </div>
+              <div class="priceTag flex justify-between mt-3">
+                <div class="text-sm">$3 <del>$5</del></div>
+                <button class="bg-PrimaryColor px-2 py-0.5 text-white rounded-md text-sm">+ Add</button>
+              </div>
+              <div class="gap-3 absolute top-[36%] left-[17%] hidden" id="showBtns9">
+                <i class="fa-regular fa-eye bg-white shadow-xl  p-3 rounded-lg"></i>
+                <i class="fa-regular fa-heart bg-white shadow-xl p-3 rounded-lg"></i>
+                <i class="fa-solid fa-arrow-right-arrow-left bg-white shadow-xl p-3 rounded-lg"></i>
+              </div>
+            </div>
+            <!-- 10 -->
+            <div class="popular-product border p-5 rounded-lg hover:border-PrimaryColor cursor-pointer hover:shadow-lg duration-200 relative" id="product10">
+              <img src="./images/product-img-10.jpg" class="w-[120px] m-auto" alt="">
+              <p class="text-xs text-[#7b888f]">Dairy, Bread & Eggs</p>
+              <h4 class="text-sm font-semibold">Amul Butter - 500 g</h4>
+              <div class="rating mt-2">
+                <small class="star">
+                  <i class="fa-solid fa-star text-yellow-400"></i>
+                  <i class="fa-solid fa-star text-yellow-400"></i>
+                  <i class="fa-solid fa-star text-yellow-400"></i>
+                  <i class="fa-regular fa-star-half-stroke text-yellow-400"></i>
+                  <i class="fa-regular fa-star"></i>
+                </small>
+                <span class="text-sm">3.5(89)</span>
+              </div>
+              <div class="priceTag flex justify-between mt-3">
+                <div class="text-sm">$13 <del>$18</del></div>
+                <button class="bg-PrimaryColor px-2 py-0.5 text-white rounded-md text-sm">+ Add</button>
+              </div>
+              <div class="gap-3 absolute top-[36%] left-[17%] hidden" id="showBtns10">
+                <i class="fa-regular fa-eye bg-white shadow-xl  p-3 rounded-lg"></i>
+                <i class="fa-regular fa-heart bg-white shadow-xl p-3 rounded-lg"></i>
+                <i class="fa-solid fa-arrow-right-arrow-left bg-white shadow-xl p-3 rounded-lg"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        
       </section>
     </main>
     <script src="./app.js"></script>

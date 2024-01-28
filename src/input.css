@@ -18,10 +18,17 @@
     .sub-head {
         @apply text-2xl font-semibold
     }
+
+    .show-btns {
+            opacity: 1;
+            pointer-events: auto;
+        }
+
 }
 
 @layer components {
     .btn {
         @apply inline-block bg-ThirdColor text-zinc-50 px-5 py-2.5 rounded-lg
     }
+
 }
