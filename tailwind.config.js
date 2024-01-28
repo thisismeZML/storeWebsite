@@ -17,10 +17,7 @@ module.exports = {
     },
     container: {
       center: true,
-      padding: {
-        default: "1rem",
-        sm: "2rem",
-      },
+
     },
     fontFamily: {
       baseFont: "sans-serif",

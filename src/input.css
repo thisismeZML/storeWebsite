@@ -12,6 +12,10 @@
     }
 
     section {
-        @apply pt-16 pb-4 md:pt-[120px] lg:pt-[80px];
+        @apply pt-8 pb-4 md:pt-[120px] lg:pt-[80px];
+    }
+
+    .sub-head {
+        @apply text-2xl font-semibold
     }
 }
